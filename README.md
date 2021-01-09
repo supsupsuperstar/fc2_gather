@@ -17,15 +17,15 @@ errot.txt 存储的因网络等问题，搜索磁力失败的番号<br>
 
 1.获取番号列表
 ---------
-登录 https://adult.contents.fc2.com/ 查找相关卖家，或类别，获取页面地址<br>
+登录 https://adult.contents.fc2.com/ 找到先要的卖家，使用网站的分类标签或者搜索功能筛选需要的影片<br>
 <img src=https://github.com/supsupsuperstar/fc2_gather/raw/main/%E6%88%AA%E5%9B%BE1.png><br>
-复制到工具运行，即可得到该页面分类下的所有的番号(保存到list.txt文件中)<br>
+复制到工具运行，即可得到该页面分类下的所有的番号<br>
 <img src=https://github.com/supsupsuperstar/fc2_gather/raw/main/%E6%88%AA%E5%9B%BE2.png>
 
 <img src=https://github.com/supsupsuperstar/fc2_gather/raw/main/%E6%88%AA%E5%9B%BE3.png><br>
 2.获取磁力
 -----
-自动从sukebei 上搜索list.txt内的所有番号，番号文件可自行增删改（连接保存到magnet.txt中）<br>
+自动从sukebei 上搜索list.txt内的所有番号，番号文件可自行增删改，当然你用来查找其他非FC2番号也行<br>
 
 <img src=https://github.com/supsupsuperstar/fc2_gather/raw/main/%E6%88%AA%E5%9B%BE4.png>
 
