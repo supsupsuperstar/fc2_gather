@@ -1,6 +1,7 @@
 简介
 =====
 fc2_gather是一个批量收集fc2影片番号，获取磁力的工具.
+<img src=https://github.com/supsupsuperstar/fc2_gather/raw/main/menu.png>
 
 参数配置
 ====
