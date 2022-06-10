@@ -91,7 +91,7 @@ def requests_web(url):
 
 #获取番号正则
 def parse_fc2id(txt):
-    pattern = re.compile('<div class="c-cntCard-110-f"><div class="c-cntCard-110-f_thumb"><a href="/article_search.*?id=([0-9]*)', re.S)
+    pattern = re.compile('<div class="c-cntCard-110-f"><div class="c-cntCard-110-f_thumb"><a href="/article/([0-9]*)/"', re.S)
     keys = re.findall(pattern, txt)
     for item in keys:
         yield item
@@ -111,7 +111,7 @@ def get_fc2id(url):
         html=requests_web(url)
         f2ids = parse_fc2id(html)
         for num in f2ids:
-            write_to_file('list.txt', 'FC2-PPV-'+str(num))
+            write_to_file('list.txt', 'FC2 '+str(num))
         i=i+1
         n=fc2_get_next_page(html)
         url=url+'&page='+str(n)
@@ -120,7 +120,7 @@ def get_fc2id(url):
 #获取磁力链接并导出txt
 def get_magnet(start,stop):
     for i in range(start,stop):
-        url = 'https://sukebei.nyaa.si/user/offkab?f=0&c=0_0&q=' + idlist[i]
+        url = 'https://sukebei.nyaa.si/?f=0&c=0_0&q=' + idlist[i]+'&s=downloads&o=desc'
         html = requests_web(url)
         if html is not None:
             magnet = parse_magnet(html)
@@ -199,7 +199,7 @@ def creta_thread():
 def input_url():
     print('例如：https://adult.contents.fc2.com/users/yamasha/articles?sort=date&order=desc')
     while True:
-        url = str(input("请输入需要抓取番号的网页："))
+        url = input("请输入需要抓取番号的网页：")
         fc2url='https://adult.contents.fc2.com'
         if fc2url in url:
             return url
