@@ -30,9 +30,8 @@ def read_config():
     else:
         context='''[下载设置]
 # http / socks5 局部代理 
-# http 代理格式为 http://ip:端口 , 如 http://localhost:8088 
-# socks5 代理格式为 socks5://ip:端口 , 如 socks5://localhost:8088 
-Proxy = 否
+# http 代理格式为 https://adult.contents.fc2.com/:8088 , 如 http://localhost:8088 
+# socks5 代理格式为 socks5://ip:端口 , 如 socks5://localhost:Proxy = 
 
 #存储番号文件目录 
 Download_path = ./Downloads/
